@@ -128,6 +128,25 @@
                     "toolbar": "full",
                     "media_upload": 1,
                     "delay": 0
+                },
+                {
+                    "key": "field_5ff37d2e30fcf",
+                    "label": "Time",
+                    "name": "time",
+                    "type": "text",
+                    "instructions": "Estimated time for this step if desired",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -168,5 +187,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609425526
+    "modified": 1609792831
 }

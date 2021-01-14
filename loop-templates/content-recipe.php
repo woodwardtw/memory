@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="col-md-4">
 			<?php echo ingredients_repeater();?>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 steps">
 				<?php echo steps_repeater();?>
 			</div>
 		</div>

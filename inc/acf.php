@@ -43,8 +43,16 @@ function steps_repeater(){
 	    	$num = get_row_index();
 	        // Load sub field value.
 	        $step = get_sub_field('step');
+	        $time = get_sub_field('time');
 	        // Do something...
-	        $html .= "<div class='step'><h2>Step {$num}</h2><div class='step-details'>{$step}</div></div>";
+	        $html .= "<div class='step'>
+	        			<h2>Step {$num}</h2>
+	        			<div class='step-time'>
+		        			<span class='time-num'>{$time}</span>
+		       		    mins</div>
+		       			<div class='step-details'>{$step}</div>
+		        		
+	        </div>";
 	    // End loop.
 	    endwhile;
 	    return $html;
