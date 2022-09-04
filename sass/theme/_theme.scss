@@ -1,1 +1,38 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+
+//*RECIPE LAND*//
+
+.step {
+	padding: 20px 10px;
+	transition: all .4s;
+	position: relative;
+}
+
+.step:hover, .step:active{
+	border-left: 10px solid $gray;
+}
+
+.step h2 {
+	color: $blue;
+}
+
+.step p {
+	font-size: 1.2rem;
+}
+
+.steps .step:nth-child(odd) {
+	background-color: #efefef;
+}
+
+.step-details {
+	width: 80%;
+	display: inline-block;
+}
+
+.step-time {
+	width: 20%;
+	position: absolute;
+	right: 0;
+	top: 25px;
+}
