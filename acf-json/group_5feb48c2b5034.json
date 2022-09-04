@@ -114,8 +114,27 @@
                     "key": "field_5feb498feee15",
                     "label": "Step",
                     "name": "step",
-                    "type": "text",
+                    "type": "wysiwyg",
                     "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_5ff37d2e30fcf",
+                    "label": "Time",
+                    "name": "time",
+                    "type": "text",
+                    "instructions": "Estimated time for this step if desired",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -168,5 +187,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609261025
+    "modified": 1609792831
 }
