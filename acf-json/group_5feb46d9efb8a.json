@@ -131,8 +131,19 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "format",
+        "page_attributes",
+        "send-trackbacks"
+    ],
     "active": true,
     "description": "",
-    "modified": 1609255054
+    "show_in_rest": 0,
+    "modified": 1662295385
 }
