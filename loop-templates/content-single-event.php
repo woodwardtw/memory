@@ -52,6 +52,9 @@ defined( 'ABSPATH' ) || exit;
 		        'submit_value'  => __('Update event')
 		    )); 
 
+			} else {
+				echo "<h2>Please login.</h2>";
+				wp_login_form();
 			}
 		?>
 	</div>
