@@ -1,6 +1,6 @@
 <?php
 /**
- * Single event partial template
+ * Single person partial template
  *
  * @package UnderStrap
  */
@@ -29,25 +29,24 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php the_content(); ?>
 		<?php 
-			$people = get_field('people');
-			if($people){
-				echo "<h2>People</h2>";
-				foreach ($people as $key => $person) {
+			$events = get_field('memories');
+			if($events){
+				echo "<h2>Memories</h2>";
+				foreach ($events as $key => $event) {
 					// code...
-					$name = get_the_title($person);
-					$link = get_the_permalink($person);
-					$thumb = get_the_post_thumbnail($person, 'thumb');
+					$name = get_the_title($event);
+					$link = get_the_permalink($event);
+					$excerpt = get_the_excerpt($event);
 					echo "
-						<div class='person-block'>
-						<a href='{$link}'>
-							{$thumb}
-							<h3>{$name}</h3>						
-						</a>
+						<div class='event-block'>
+							<h3><a href='{$link}'>{$name}</a></h2>
+							
 						</div>
 					";
 				}
 			}
 		?>
+
 
 		<?php
 		wp_link_pages(

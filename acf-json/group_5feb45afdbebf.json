@@ -6,6 +6,7 @@
             "key": "field_5feb460247d84",
             "label": "First Name",
             "name": "first_name",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_5feb460ba424d",
             "label": "Middle Name",
             "name": "middle_name",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_5feb461723782",
             "label": "Last Name",
             "name": "last_name",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -58,6 +61,61 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_650f05b899c75",
+            "label": "Brief Bio",
+            "name": "brief_bio",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_650f05cbe1436",
+            "label": "Memories",
+            "name": "memories",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "event"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_5feb4729382a7"
+            ]
         }
     ],
     "location": [
@@ -89,5 +147,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1609257568
+    "show_in_rest": 0,
+    "modified": 1695483800
 }

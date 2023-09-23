@@ -3,9 +3,44 @@
     "title": "Event",
     "fields": [
         {
+            "key": "field_5feb4729382a7",
+            "label": "People",
+            "name": "people",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "person"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "elements": [
+                "featured_image"
+            ],
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_650f05cbe1436"
+            ]
+        },
+        {
             "key": "field_5feb46dfeb608",
             "label": "Start Date",
             "name": "start_date",
+            "aria-label": "",
             "type": "date_time_picker",
             "instructions": "",
             "required": 0,
@@ -23,6 +58,7 @@
             "key": "field_5feb46f0eb609",
             "label": "End Date",
             "name": "end_date",
+            "aria-label": "",
             "type": "date_time_picker",
             "instructions": "",
             "required": 0,
@@ -40,6 +76,7 @@
             "key": "field_5feb470bddd5c",
             "label": "Location",
             "name": "location",
+            "aria-label": "",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -60,40 +97,14 @@
             "elements": "",
             "min": "",
             "max": "",
-            "return_format": "object"
-        },
-        {
-            "key": "field_5feb4729382a7",
-            "label": "People",
-            "name": "people",
-            "type": "relationship",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "person"
-            ],
-            "taxonomy": "",
-            "filters": [
-                "search",
-                "taxonomy"
-            ],
-            "elements": [
-                "featured_image"
-            ],
-            "min": "",
-            "max": "",
-            "return_format": "object"
+            "return_format": "object",
+            "bidirectional_target": []
         },
         {
             "key": "field_5feb4875d0c84",
             "label": "Recipe",
             "name": "recipe",
+            "aria-label": "",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -114,7 +125,8 @@
             "elements": "",
             "min": "",
             "max": "",
-            "return_format": "object"
+            "return_format": "object",
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -145,5 +157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1662295385
+    "modified": 1695483753
 }
