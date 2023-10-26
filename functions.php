@@ -100,3 +100,10 @@ if (current_user_can('level_10')) {
     wp_redirect(get_option('siteurl') . '/wp-admin/edit.php?post_type=event');}
 }
 add_action('admin_menu', 'remove_the_dashboard');
+
+
+function my_acf_save_post( $post_id )
+{
+    wp_redirect(get_permalink($post_id)); exit;
+}
+add_action('acf/save_post', 'my_acf_save_post', 20);
