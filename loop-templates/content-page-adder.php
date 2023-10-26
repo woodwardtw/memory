@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 
-		<?php the_content(); ?>
+		<?php //the_content(); ?>
 		<?php 
 			$settings = array(
 				'post_id'       => 'new_post',
@@ -35,7 +35,13 @@ defined( 'ABSPATH' ) || exit;
 		        'return'        => home_url('event'),
 		        'submit_value'  => 'Submit'
 			);
-			acf_form($settings);
+			if(post_password_required( )){
+			    echo get_the_password_form();
+			}
+			else{
+				acf_form($settings);
+			}
+			
 
 		?>
 
